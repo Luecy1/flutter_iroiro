@@ -21,15 +21,11 @@ Person _$PersonFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Person {
   String get firstName => throw _privateConstructorUsedError;
-
   String get lastName => throw _privateConstructorUsedError;
-
   int get age => throw _privateConstructorUsedError;
-
   String? get hosoku => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
   @JsonKey(ignore: true)
   $PersonCopyWith<Person> get copyWith => throw _privateConstructorUsedError;
 }
@@ -38,7 +34,6 @@ mixin _$Person {
 abstract class $PersonCopyWith<$Res> {
   factory $PersonCopyWith(Person value, $Res Function(Person) then) =
       _$PersonCopyWithImpl<$Res>;
-
   $Res call({String firstName, String lastName, int age, String? hosoku});
 }
 
@@ -47,7 +42,6 @@ class _$PersonCopyWithImpl<$Res> implements $PersonCopyWith<$Res> {
   _$PersonCopyWithImpl(this._value, this._then);
 
   final Person _value;
-
   // ignore: unused_field
   final $Res Function(Person) _then;
 
@@ -83,7 +77,6 @@ class _$PersonCopyWithImpl<$Res> implements $PersonCopyWith<$Res> {
 abstract class _$$_PersonCopyWith<$Res> implements $PersonCopyWith<$Res> {
   factory _$$_PersonCopyWith(_$_Person value, $Res Function(_$_Person) then) =
       __$$_PersonCopyWithImpl<$Res>;
-
   @override
   $Res call({String firstName, String lastName, int age, String? hosoku});
 }
@@ -204,16 +197,12 @@ abstract class _Person implements Person {
 
   @override
   String get firstName => throw _privateConstructorUsedError;
-
   @override
   String get lastName => throw _privateConstructorUsedError;
-
   @override
   int get age => throw _privateConstructorUsedError;
-
   @override
   String? get hosoku => throw _privateConstructorUsedError;
-
   @override
   @JsonKey(ignore: true)
   _$$_PersonCopyWith<_$_Person> get copyWith =>
