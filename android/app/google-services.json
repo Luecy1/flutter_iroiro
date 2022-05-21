@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "32508001290",
+    "project_id": "flutter-iroiro",
+    "storage_bucket": "flutter-iroiro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32508001290:android:4b9317a5a3a8bede59b3f3",
+        "android_client_info": {
+          "package_name": "com.example.flutter_iroiro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32508001290-eitb6u6sevur45hn6vstihjri9521e6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJSUgLgiZogy45PWIjgksaWrwbhVxrJGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32508001290-eitb6u6sevur45hn6vstihjri9521e6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
