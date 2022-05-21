@@ -3,6 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 // ファイル名+.freezed.dart
 part 'model.freezed.dart';
+// 自動生成ファイルはそのままコミットすることを推奨
 
 @freezed
 class Person with _$Person {
