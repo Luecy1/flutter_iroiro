@@ -50,6 +50,7 @@ class DefaultFirebaseOptions {
     projectId: 'flutter-iroiro2',
     authDomain: 'flutter-iroiro2.firebaseapp.com',
     storageBucket: 'flutter-iroiro2.appspot.com',
+    measurementId: 'G-HL1JYRRFGB',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
