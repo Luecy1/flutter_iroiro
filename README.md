@@ -5,10 +5,10 @@
 参考元
 https://github.com/wasabeef/flutter-architecture-blueprints
 
-- [ ] Freezed
+- [x] Freezed
 - [ ] Retrofit
 - [ ] Riverpod + MVVM
-- [ ] Firebase
-- [ ] FirebaseAnalysis
+- [x] Firebase
+- [x] FirebaseAnalysis
 - [ ] FirebaseAuth
 - [ ] FirebaseFiresotre
