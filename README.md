@@ -12,3 +12,4 @@ https://github.com/wasabeef/flutter-architecture-blueprints
 - [x] FirebaseAnalysis
 - [ ] FirebaseAuth
 - [ ] FirebaseFiresotre
+- [ ] GoogleApi系
