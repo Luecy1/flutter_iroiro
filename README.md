@@ -13,3 +13,4 @@ https://github.com/wasabeef/flutter-architecture-blueprints
 - [ ] FirebaseAuth
 - [ ] FirebaseFiresotre
 - [ ] GoogleApi系
+- [x] LocalNotification
