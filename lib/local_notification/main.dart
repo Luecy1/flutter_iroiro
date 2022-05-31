@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:timezone/timezone.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
@@ -57,9 +58,17 @@ class MyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: ElevatedButton(
-        onPressed: _showNotification,
-        child: Text('push'),
+      child: Column(
+        children: [
+          ElevatedButton(
+            onPressed: _showNotification,
+            child: Text('push'),
+          ),
+          ElevatedButton(
+            onPressed: _showNotificationZonedSchedule,
+            child: Text('push zonedSchedule'),
+          ),
+        ],
       ),
     );
   }
@@ -78,6 +87,30 @@ class MyPage extends StatelessWidget {
     await flutterLocalNotificationsPlugin.show(
         0, 'plain title', 'plain body', platformChannelSpecifics,
         payload: 'item x');
+  }
+
+  Future<void> _showNotificationZonedSchedule() async {
+    final datetime = TZDateTime.now(UTC).add(const Duration(seconds: 3));
+
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
+            importance: Importance.max,
+            priority: Priority.high,
+            ticker: 'ticker');
+    const NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+    await flutterLocalNotificationsPlugin.zonedSchedule(
+      0,
+      'title',
+      'body',
+      datetime,
+      platformChannelSpecifics,
+      androidAllowWhileIdle: true,
+      uiLocalNotificationDateInterpretation:
+          UILocalNotificationDateInterpretation.absoluteTime,
+      payload: 'item x',
+    );
   }
 }
 
